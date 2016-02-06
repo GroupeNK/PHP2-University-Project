@@ -1,0 +1,167 @@
+$defaultBlue: #007ACC;
+$defaultGreyDark: #2D2D30;
+$defaultGreyLight: #3C3C3C;
+
+$backgroundPattern: url('images/background.png');
+
+$font: Montserrat;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+* {
+	font-family: $font;
+}
+
+body {
+	background: $backgroundPattern;
+}
+
+/*Navbar*/
+
+.navbar-default {
+	background-color: $defaultGreyDark;
+	border: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: $defaultBlue;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: white;
+  background-color: $defaultBlue;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $defaultBlue;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: $defaultGreyLight;
+  background-color: $defaultBlue;
+}
+
+.navbar-nav {
+	margin: 0px -15px;
+}
+
+.navbar {
+	margin-bottom: 0
+}
+
+/*Random*/
+
+.info {
+	background-color: $defaultBlue;
+	@include border-radius(15px);
+	border-top-right-radius:0;
+	border-top-left-radius:0;
+	padding: 5px 0px;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+#infoX {
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: $defaultBlue;
+  position: fixed;
+  z-index: 2000;
+  top: 48px;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+/*Login/Register*/
+
+.login-block {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid $defaultBlue;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 20px;
+    outline: none;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid $defaultBlue;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: $defaultBlue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid $defaultBlue;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: $defaultBlue;
+}
+
+body {
+	background-color: green;
+}
