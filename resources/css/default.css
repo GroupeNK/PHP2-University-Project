@@ -2,34 +2,34 @@
   font-family: Montserrat; }
 
 body {
-  background: url("images/background.png"); }
+  background: #E1E6FA; }
 
 /*Navbar*/
 .navbar-default {
-  background-color: #2D2D30;
+  background-color: #183152;
   border: 0; }
 
 .navbar-default .navbar-brand {
-  color: #007ACC; }
+  color: #E1E6FA; }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: white;
-  background-color: #007ACC; }
+  background-color: #183152; }
 
 .navbar-default .navbar-nav > li > a {
-  color: white; }
+  color: #E1E6FA; }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #007ACC;
+  color: white;
   background-color: transparent; }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #3C3C3C;
-  background-color: #007ACC; }
+  color: #E1E6FA;
+  background-color: #183152; }
 
 .navbar-nav {
   margin: 0px -15px; }
@@ -39,7 +39,7 @@ body {
 
 /*Random*/
 .info {
-  background-color: #007ACC;
+  background-color: #183152;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -65,7 +65,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #007ACC;
+  background: #183152;
   position: fixed;
   z-index: 2000;
   top: 48px;
@@ -79,7 +79,7 @@ body {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  border-top: 5px solid #007ACC;
+  border-top: 5px solid #183152;
   margin: 0 auto; }
 
 .login-block h1 {
@@ -103,15 +103,15 @@ body {
   outline: none; }
 
 .login-block input:active, .login-block input:focus {
-  border: 1px solid #007ACC; }
+  border: 1px solid #183152; }
 
 .login-block button {
   width: 100%;
   height: 40px;
-  background: #007ACC;
+  background: #183152;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid #007ACC;
+  border: 1px solid #183152;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -121,9 +121,48 @@ body {
   cursor: pointer; }
 
 .login-block button:hover {
-  background: #007ACC; }
+  background: #183152; }
 
-body {
-  background-color: green; }
+.banner {
+  padding-top: 49px; }
+
+.gall_block {
+  background-color: #C4D7ED;
+  padding: 1px; }
+
+.bann_capt {
+  background-color: white;
+  color: #183152;
+  padding-bottom: 22px;
+  text-align: center;
+  font: bold 36px Montserrat;
+  word-wrap: break-word; }
+
+.bann_title {
+  padding: 6px 0 18px;
+  width: 200px;
+  margin: 0 auto 2px;
+  border-bottom: 1px dashed #183152; }
+
+.bann_capt a {
+  font-size: 20px;
+  color: #183152; }
+
+.bann_capt a:hover {
+  color: #183152;
+  text-decoration: underline; }
+
+.bann_capt:nth-child(odd) .bann_title {
+  border-color: white; }
+
+.bann_capt:nth-child(odd) {
+  background-color: #183152;
+  color: white; }
+
+.bann_capt:nth-child(odd) a {
+  color: white; }
+
+.bann_capt:nth-child(odd) a:hover {
+  color: white; }
 
 /*# sourceMappingURL=default.css.map */

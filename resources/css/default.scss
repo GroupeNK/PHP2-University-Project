@@ -1,11 +1,14 @@
-$defaultBlue: #007ACC;
-$defaultGreyDark: #2D2D30;
-$defaultGreyLight: #3C3C3C;
+// Color theme
+$c1: #E1E6FA;
+$c2: #C4D7ED;
+$c3: #ABC8E2;
+$c4: #375D81;
+$c5: #183152;
 
-$backgroundPattern: url('images/background.png');
-
+// Font
 $font: Montserrat;
 
+// Functions
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -18,41 +21,41 @@ $font: Montserrat;
 }
 
 body {
-	background: $backgroundPattern;
+	background: $c1;
 }
 
 /*Navbar*/
 
 .navbar-default {
-	background-color: $defaultGreyDark;
+	background-color: $c5;
 	border: 0;
 }
 
 .navbar-default .navbar-brand {
-  color: $defaultBlue;
+  color: $c1;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: white;
-  background-color: $defaultBlue;
+  background-color: $c5;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: $c1;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: $defaultBlue;
+  color: white;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: $defaultGreyLight;
-  background-color: $defaultBlue;
+  color: $c1;
+  background-color: $c5;
 }
 
 .navbar-nav {
@@ -66,7 +69,7 @@ body {
 /*Random*/
 
 .info {
-	background-color: $defaultBlue;
+	background-color: $c5;
 	@include border-radius(15px);
 	border-top-right-radius:0;
 	border-top-left-radius:0;
@@ -80,12 +83,12 @@ body {
 #infoX {
 	cursor: pointer;
 	margin-right: 10px;
+        color: white;
 }
 
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
-
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -96,7 +99,7 @@ body {
 }
 
 .pace .pace-progress {
-  background: $defaultBlue;
+  background: $c5;
   position: fixed;
   z-index: 2000;
   top: 48px;
@@ -112,7 +115,7 @@ body {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    border-top: 5px solid $defaultBlue;
+    border-top: 5px solid $c5;
     margin: 0 auto;
 }
 
@@ -139,16 +142,16 @@ body {
 }
 
 .login-block input:active, .login-block input:focus {
-    border: 1px solid $defaultBlue;
+    border: 1px solid $c5;
 }
 
 .login-block button {
     width: 100%;
     height: 40px;
-    background: $defaultBlue;
+    background: $c5;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid $defaultBlue;
+    border: 1px solid $c5;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
@@ -159,9 +162,60 @@ body {
 }
 
 .login-block button:hover {
-    background: $defaultBlue;
+    background: $c5;
 }
 
-body {
-	background-color: green;
+// Polica
+
+.banner {
+    padding-top: 49px;
 }
+
+.gall_block {
+    background-color: $c2;
+    padding: 1px;
+}
+
+.bann_capt {
+    background-color: white;
+    color: $c5;
+    padding-bottom: 22px;
+    text-align: center;
+    font: bold 36px $font;
+    word-wrap: break-word;
+}
+
+.bann_title {
+    padding: 6px 0 18px;
+    width: 200px;
+    margin: 0 auto 2px;
+    border-bottom: 1px dashed $c5;
+}
+
+.bann_capt  a {
+    font-size: 20px;
+    color: $c5
+}
+
+.bann_capt  a:hover {
+    color: $c5;
+    text-decoration: underline;
+}
+
+.bann_capt:nth-child(odd) .bann_title {
+  border-color: white;
+}
+
+.bann_capt:nth-child(odd) {
+  background-color: $c5;
+  color: white;
+}
+
+.bann_capt:nth-child(odd) a {
+  color: white;
+}
+
+.bann_capt:nth-child(odd) a:hover {
+    color: white;
+}
+
